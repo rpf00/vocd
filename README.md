@@ -50,7 +50,11 @@ VOCD breaks this tradeoff. By using Viterbi decoding over a piecewise-stationary
 
 ## Status
 
-Research code accompanying the VOCD manuscript (working title: *Robust Viterbi Online Changepoint Detection for Sensor Signal Drift Correction*), targeted at **Nature Sensors**.
+Research code accompanying the VOCD manuscript (working title: *Robust Viterbi Online Changepoint Detection for Sensor Signal Drift Correction*), targeted at **Nature Communications**.
+
+## Data
+
+The dataset (~4.24 GB) is archived on Zenodo: https://doi.org/10.5281/zenodo.XXXXXXX
 
 ## References
 
