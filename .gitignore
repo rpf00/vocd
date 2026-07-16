@@ -5,12 +5,20 @@ __pycache__/
 venv/
 env/
 
-# Data & outputs
-data/
-*.csv
+# Build artifacts (platform-specific; rebuilt by pip install -e .)
+build/
+dist/
+*.egg-info/
+*.so
+*.dylib
+*.pyd
+
+# Large data (the three committed datasets are tracked explicitly)
 *.h5
 outputs/
-results/
+
+# Baselines cloned separately
+DSM-bocd/
 
 # Notebooks
 .ipynb_checkpoints/
