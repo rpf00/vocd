@@ -16,7 +16,8 @@ OMEGA = 0.1
 
 
 def detect(x: np.ndarray, mean0: float = None, dsm_path: str = None,
-           extract: str = "causal", omega: float = OMEGA) -> list:
+           extract: str = "causal", omega: float = OMEGA,
+           hazard_timescale: float = HAZARD_TIMESCALE) -> list:
     x = np.asarray(x, float).reshape(-1, 1)
     if mean0 is None:
         mean0 = float(np.mean(x))
@@ -37,6 +38,6 @@ def detect(x: np.ndarray, mean0: float = None, dsm_path: str = None,
 
     model = m["DSMGaussian"](data=x, m=mfun, grad_m=grad_m,
                              omega=omega, mu0=mu0, Sigma0=Sigma0)
-    R = m["bocpd"](x, m["ConstantHazard"](HAZARD_TIMESCALE), model)
+    R = m["bocpd"](x, m["ConstantHazard"](hazard_timescale), model)
     cps = find_cp_causal(R) if extract == "causal" else list(m["find_cp"](R))
     return sorted(int(c) for c in cps if c > 0)
