@@ -1,4 +1,4 @@
-"""R-FOCuS — outlier-robust FOCuS via a capped (biweight) score.
+"""R-FOCuS — outlier-robust FOCuS via a Huber-clipped score.
 
 Reference reimplementation following the robust-CUSUM idea of
 
@@ -6,38 +6,45 @@ Reference reimplementation following the robust-CUSUM idea of
     outliers", JASA 114(525),
 
 grafted onto the FOCuS recursion of Romano et al. (2023).  Identical to
-:class:`models.focus.FOCuS` except that each standardised residual is passed
-through Tukey's biweight influence function, so a single gross outlier
-contributes a bounded amount to the CUSUM instead of an unbounded spike.
+:class:`alternative_models.focus.FOCuS` except that each standardised residual
+is passed through Huber's influence function before entering the CUSUM.
 Not the authors' code.
 
-The cap ``c`` is in robust-scale (MAD) units; ``c = 4.685`` is the classic
-95%-efficiency biweight tuning and is used a priori (not tuned on the series).
+WHY HUBER, NOT A REDESCENDING BIWEIGHT.  A robust *detection* score must stay
+bounded for isolated outliers yet keep responding to a *sustained* level shift.
+Tukey's biweight redescends to exactly zero beyond its cap, so a genuine
+5-10 sigma mean change is treated as a run of outliers and contributes ~0 to
+the CUSUM — the detector goes blind to the very change it should find (this was
+the cause of R-FOCuS's degenerate operating point in earlier runs).  Huber's
+psi saturates to +/-c instead of redescending: an isolated spike contributes a
+single bounded term, while a sustained shift of any magnitude contributes ~c
+per sample and still accumulates to threshold.  The cap ``c = 1.345`` is the
+classic 95%-efficiency Huber tuning and is fixed a priori (not tuned on the
+series).
 """
 from __future__ import annotations
-
-import numpy as np
 
 from .focus import FOCuS
 
 
 class RFOCuS(FOCuS):
     def __init__(self, horizon: int, alpha: float, min_seg: int = 10,
-                 burnin: int = 10, c: float = 4.685):
+                 burnin: int = 10, c: float = 1.345):
         super().__init__(horizon, alpha, min_seg, burnin)
         self.c = float(c)
 
     def _psi(self, resid: float) -> float:
-        # Tukey biweight psi (redescending), bounded in magnitude by ~0.385*c
+        # Huber psi: linear in [-c, c], saturating (not redescending) beyond.
         c = self.c
-        if abs(resid) >= c:
-            return 0.0
-        u = resid / c
-        return resid * (1.0 - u * u) ** 2
+        if resid > c:
+            return c
+        if resid < -c:
+            return -c
+        return resid
 
 
-def detect(x: np.ndarray, alpha: float = 0.01, min_seg: int = 10,
-           c: float = 4.685) -> list:
+def detect(x, alpha: float = 0.01, min_seg: int = 10, c: float = 1.345):
+    import numpy as np
     from ._restart import run_restart
     x = np.asarray(x, float).ravel()
     n = x.size
