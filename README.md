@@ -83,14 +83,6 @@ Experiment scripts write CSVs to `results/`, and figure scripts read them back w
 
 Comparison detectors live in `alternative_models/` and are called through one `REGISTRY` with identical inputs and causal extraction: BOCD and Dm-BOCD from the authors' DSM-bocd code (pass `--dsm-path` to a clone of https://github.com/maltamiranomontero/DSM-bocd), and our re-implementations of FOCuS, NP-FOCuS, NUNC, CHAD and CHAMP following their original papers (FOCuS and NP-FOCuS also as compiled C++).
 
-## Known limitations
-
-- **Frozen regime bank.** The bank is fitted on the first `init_window` observations and never adapts, so a change between two levels that both lie outside the burn-in range moves no state and is missed (see `test_frozen_bank_misses_regimes_outside_the_burn_in` in `vocd/test_core.py`).
-- **Univariate.** Multivariate streams are processed channel by channel.
-- **Gate window.** `verify_w` sets both the latency and the shortest resolvable segment, and with few points per side the rank tests cannot reach very small error budgets.
-- **Piecewise-stationary model.** On series that trend rather than switch between regimes, VOCD segments the slow drift, as other detectors do.
-- **Nominal error control.** The gate tests a split point that the proposal stage chose from the same data, and the rank tests assume exchangeable observations, so the error budget is nominal under selection and autocorrelation.
-
 ## Data
 
 All datasets used in the paper are public:
