@@ -24,7 +24,7 @@ VOCD needs no sampling, no learning rate and no random seed: its output is deter
 git clone https://github.com/rpf00/vocd
 cd vocd
 pip install -e .            # NumPy + SciPy; builds the C++ Viterbi backend if a compiler and pybind11 are available
-pip install -e ".[dev]"     # + pytest
+pip install -e ".[dev,paper]"
 pytest                      # unit tests and Python/C++ equivalence tests
 ```
 
