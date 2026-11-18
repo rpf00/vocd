@@ -32,3 +32,7 @@ data/*
 !data/README.md
 !data/fetch_data.py
 !results/env/
+examples/cryptocrash_data.py
+examples/env_calibrate*.py
+examples/env_calibrated.py
+results/env/env_calibrat*.csv
