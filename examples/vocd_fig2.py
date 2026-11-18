@@ -1,5 +1,5 @@
 """
-Fig 2 (Nature-Communications style) — VOCD robustness. VOCD only.
+Fig 2 — VOCD robustness. VOCD only.
 
 Panels (no plot titles; bold lowercase panel letters; Arial):
   a  scheme: synthetic signal at 0/2/5/7/10/15/20% outliers (outliers in red)
@@ -82,7 +82,7 @@ TOP_FIELDS = {"verify_w": [15, 20, 25, 30, 40, 50], "dedup_w": [5, 10, 15, 20, 3
 SYNTH_CSV = os.path.join(_REPO, "results", "synthetic", "synthetic_v3_best.csv")
 
 # ── LAYOUT (mm, final print size; y from the top edge) ───────────────
-# Nature Portfolio production limits (also used by Nature Communications):
+# Nature Portfolio production limits:
 #   width  180 mm (double column; 88 mm single column)
 #   height 170 mm MAXIMUM, so the legend fits underneath on the same page
 #   text   7 pt maximum, 5 pt minimum; panel letters 8 pt bold lower-case
@@ -218,7 +218,7 @@ F = {}   # derived font sizes, filled by set_nature_style(base)
 
 def set_nature_style(base=7.0):
     """All text sizes derive from one base size in pt AT FINAL PRINT SIZE.
-    Nature Communications lettering is typically 7-8 pt; panel letters are
+    Journal lettering is typically 7-8 pt; panel letters are
     bold lower-case at about the same size."""
     import matplotlib as mpl
     F.update(base=base, label=base, tick=base - 1, legend=base - 1,

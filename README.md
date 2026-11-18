@@ -190,7 +190,7 @@ examples/             experiment scripts (*_data_v3.py) and figure/table scripts
 benchmarks/           backend profiling, scaling and Python/C++ equivalence checks
 tests/                unit and equivalence tests (pytest)
 data/                 README and download script; the datasets live on Zenodo
-results/, si_isfet/   CSV outputs of the experiment scripts and the figures built from them
+results/                CSV outputs of the experiment scripts and the figures built from them
 ```
 
 ## Comparison detectors

@@ -1,5 +1,5 @@
 """
-SI figure (Nature-Communications style) — runtime scaling with series length
+SI figure — runtime scaling with series length
 (Supplementary Fig. 10).  Same style and palette as the other figures:
 
   a  total runtime (ms) vs series length T, log-log, every detector (Python

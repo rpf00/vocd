@@ -1,5 +1,5 @@
 """
-SI figure (Nature-Communications style) — environmental monitoring, shifted-
+SI figure — environmental monitoring, shifted-
 date null (Supplementary Fig. 6).  Same style, palette and layout scheme as
 the other SI figures:
 

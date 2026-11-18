@@ -42,7 +42,7 @@ stationary over the 90-day record.  The pH reference establishes this for H+;
 nothing establishes it for Na+/K+, so a real seasonal ionic trend would read as
 residual drift.
 
-Outputs (all in --out-dir, default ``si_isfet/``):
+Outputs (all in --out-dir, default ``results/isfet_si/``):
   si_isfet_summary.csv           one row per (ion, method): budget, metrics,
                                  runtime, CP days; RMSE columns filled for H+
   si_isfet_{ion}_series.csv      per-day V, every method's E0_hat and corrected V
@@ -473,7 +473,7 @@ def main() -> None:
     ap.add_argument("--dsm-path", default=None)
     ap.add_argument("--methods", default=PANEL)
     ap.add_argument("--no-baselines", action="store_true")
-    ap.add_argument("--out-dir", default="si_isfet")
+    ap.add_argument("--out-dir", default="results/isfet_si")
     # transferred budgets
     ap.add_argument("--h-best", default="results/isfet/isfet_v3_best.csv",
                     help="H+ best-operating-point CSV from isfet_data_v3.py --sweep")

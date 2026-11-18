@@ -1,5 +1,5 @@
 """
-Fig 4 (Nature-Communications style) — MOX gas-sensor (e-nose) drift compensation
+Fig 4 — MOX gas-sensor (e-nose) drift compensation
 
 Panels (bold lower-case letters; Arial; built AT FINAL PRINT SIZE):
   a  experiment: compressed air -> mass-flow controller -> humidifier -> sample

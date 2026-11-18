@@ -1,5 +1,5 @@
 """
-SI figures (Nature-Communications style) — MOX gas-sensor baseline re-anchoring
+SI figures — MOX gas-sensor baseline re-anchoring
 on diacetyl (0.1 ppm and 1 ppm).  One figure per analyte, two panels each,
 same style, palette and panels as ``vocd_fig4_gas.py`` (panels c and d there)
 and same layout scheme as ``vocd_figS_isfet_na_k.py``:

@@ -1,5 +1,5 @@
 """
-Fig 5 (Nature-Communications style) — environmental monitoring: change-points vs
+Fig 5 — environmental monitoring: change-points vs
 extreme-weather events in NoVA stream/reservoir water quality (2020-21).
 
 Panels (bold lower-case letters; Arial; built AT FINAL PRINT SIZE):

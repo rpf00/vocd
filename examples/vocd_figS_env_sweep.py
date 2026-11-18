@@ -1,5 +1,5 @@
 """
-SI figure (Nature-Communications style) — environmental monitoring, operating-
+SI figure — environmental monitoring, operating-
 point robustness (Supplementary Fig. 5).  Same style, palette and layout scheme
 as ``vocd_figS_isfet_na_k.py`` / ``vocd_figS_gas_diacetyl.py``:
 

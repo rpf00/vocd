@@ -1,5 +1,5 @@
 """
-SI figures (Nature-Communications style) — ISFET Na+ and K+ drift compensation,
+SI figures — ISFET Na+ and K+ drift compensation,
 reference-free.  One figure per ion, two panels each, same style, palette and
 layout scheme as ``vocd_fig3_isfet.py`` (panels c and d there):
 
@@ -37,8 +37,8 @@ import os
 import numpy as np
 
 _REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RES = os.path.join(_REPO, "si_isfet")
-OUTDIR = os.path.join(_REPO, "si_isfet", "figures")
+RES = os.path.join(_REPO, "results", "isfet_si")
+OUTDIR = os.path.join(_REPO, "results", "isfet_si", "figures")
 
 ION_TEX = {"na": r"Na$^+$", "k": r"K$^+$", "h": r"H$^+$"}
 

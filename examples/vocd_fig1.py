@@ -1,5 +1,5 @@
 """
-Fig 1 (Nature-Communications style) — VOCD pipeline overview. Schematic only.
+Fig 1 — VOCD pipeline overview. Schematic only.
 
 Panels (no plot titles; bold lowercase panel letters; Arial):
   a  full pipeline, start to finish: input time series (with change-points and

@@ -1,5 +1,5 @@
 """
-SI figures (Nature-Communications style) — classical CD benchmarks of the
+SI figures — classical CD benchmarks of the
 DSM-bocd paper, one figure each (Supplementary Figs. 7, 8 and 9).  Same style
 and palette as the other figures of the paper.  Each figure is one signal
 panel and, below it, one row per detector with the CPs it places:

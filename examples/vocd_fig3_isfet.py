@@ -1,5 +1,5 @@
 """
-Fig 3 (Nature-Communications style) — ISFET (H+) drift correction.
+Fig 3 — ISFET (H+) drift correction.
 
 Panels (bold lower-case letters; Arial; built AT FINAL PRINT SIZE):
   a  experiment: river intake -> reference pH probe -> ISFET probe -> readout,
