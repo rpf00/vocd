@@ -5,7 +5,7 @@ Robust and fast changepoint detection for streaming sensor data, with a focus on
 This repository contains the `vocd` package, the comparison detectors, and the scripts that reproduce every figure and table of the manuscript *"Robust and Low-latency Online Changepoint Detection for Sensor Drift Compensation"*.
 
 - **Data:** https://doi.org/10.5281/zenodo.23388462 (see [`data/README.md`](data/README.md))
-- **Code archive:** https://doi.org/10.5281/zenodo.24330895
+- **Code archive:** https://doi.org/10.5281/zenodo.24333830
 - **License:** MIT
 
 ---
