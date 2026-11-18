@@ -1,0 +1,343 @@
+method,day_folder,onset_idx
+vocd,Day 2,329
+vocd,Day 3,311
+vocd,Day 4,340
+vocd,Day 5,172
+vocd,Day 6,330
+vocd,Day 7,358
+vocd,Day 8,344
+vocd,Day 9,356
+vocd,Day 10,367
+vocd,Day 11,375
+vocd,Day 12,324
+vocd,Day 13,366
+vocd,Day 15,96
+vocd,Day 16,370
+vocd,Day 17,159
+vocd,Day 18,44
+vocd,Day 19,313
+vocd,Day 20,245
+vocd,Day 21,182
+vocd,Day 22,314
+vocd,Day 23,304
+vocd,Day 24,345
+vocd,Day 25,336
+vocd,Day 26,345
+vocd,Day 27,181
+vocd,Day 28,564
+vocd,Day 29,314
+vocd,Day 30,84
+vocd,Day 31,28
+vocd,Day 32,301
+vocd,Day 33,338
+vocd,Day 34,314
+vocd,Day 35,684
+vocd,Day 36,344
+vocd,Day 37,358
+vocd,Day 38,352
+vocd,Day 39,333
+vocd,Day 40,310
+vocd (cpp),Day 2,329
+vocd (cpp),Day 3,311
+vocd (cpp),Day 4,340
+vocd (cpp),Day 5,172
+vocd (cpp),Day 6,330
+vocd (cpp),Day 7,358
+vocd (cpp),Day 8,344
+vocd (cpp),Day 9,356
+vocd (cpp),Day 10,367
+vocd (cpp),Day 11,375
+vocd (cpp),Day 12,324
+vocd (cpp),Day 13,366
+vocd (cpp),Day 15,96
+vocd (cpp),Day 16,370
+vocd (cpp),Day 17,159
+vocd (cpp),Day 18,44
+vocd (cpp),Day 19,313
+vocd (cpp),Day 20,245
+vocd (cpp),Day 21,182
+vocd (cpp),Day 22,314
+vocd (cpp),Day 23,304
+vocd (cpp),Day 24,345
+vocd (cpp),Day 25,336
+vocd (cpp),Day 26,345
+vocd (cpp),Day 27,181
+vocd (cpp),Day 28,564
+vocd (cpp),Day 29,314
+vocd (cpp),Day 30,84
+vocd (cpp),Day 31,28
+vocd (cpp),Day 32,301
+vocd (cpp),Day 33,338
+vocd (cpp),Day 34,314
+vocd (cpp),Day 35,684
+vocd (cpp),Day 36,344
+vocd (cpp),Day 37,358
+vocd (cpp),Day 38,352
+vocd (cpp),Day 39,333
+vocd (cpp),Day 40,310
+bocd,Day 2,332
+bocd,Day 3,317
+bocd,Day 4,340
+bocd,Day 5,239
+bocd,Day 6,325
+bocd,Day 7,365
+bocd,Day 8,345
+bocd,Day 9,356
+bocd,Day 10,363
+bocd,Day 11,386
+bocd,Day 12,322
+bocd,Day 13,366
+bocd,Day 15,98
+bocd,Day 16,346
+bocd,Day 17,313
+bocd,Day 18,42
+bocd,Day 19,310
+bocd,Day 20,303
+bocd,Day 21,318
+bocd,Day 22,302
+bocd,Day 23,307
+bocd,Day 24,344
+bocd,Day 25,338
+bocd,Day 26,350
+bocd,Day 27,364
+bocd,Day 28,121
+bocd,Day 29,314
+bocd,Day 30,84
+bocd,Day 31,100
+bocd,Day 32,299
+bocd,Day 33,338
+bocd,Day 34,321
+bocd,Day 35,668
+bocd,Day 36,344
+bocd,Day 37,351
+bocd,Day 38,339
+bocd,Day 39,323
+bocd,Day 40,310
+focus,Day 2,-1
+focus,Day 3,317
+focus,Day 4,340
+focus,Day 5,24
+focus,Day 6,86
+focus,Day 7,365
+focus,Day 8,-1
+focus,Day 9,356
+focus,Day 10,363
+focus,Day 11,18
+focus,Day 12,326
+focus,Day 13,368
+focus,Day 15,330
+focus,Day 16,20
+focus,Day 17,313
+focus,Day 18,42
+focus,Day 19,310
+focus,Day 20,197
+focus,Day 21,-1
+focus,Day 22,-1
+focus,Day 23,307
+focus,Day 24,344
+focus,Day 25,14
+focus,Day 26,-1
+focus,Day 27,181
+focus,Day 28,151
+focus,Day 29,314
+focus,Day 30,84
+focus,Day 31,20
+focus,Day 32,295
+focus,Day 33,328
+focus,Day 34,91
+focus,Day 35,302
+focus,Day 36,56
+focus,Day 37,-1
+focus,Day 38,339
+focus,Day 39,323
+focus,Day 40,299
+focus (cpp),Day 2,-1
+focus (cpp),Day 3,317
+focus (cpp),Day 4,340
+focus (cpp),Day 5,24
+focus (cpp),Day 6,86
+focus (cpp),Day 7,365
+focus (cpp),Day 8,-1
+focus (cpp),Day 9,356
+focus (cpp),Day 10,363
+focus (cpp),Day 11,18
+focus (cpp),Day 12,326
+focus (cpp),Day 13,368
+focus (cpp),Day 15,330
+focus (cpp),Day 16,20
+focus (cpp),Day 17,313
+focus (cpp),Day 18,42
+focus (cpp),Day 19,310
+focus (cpp),Day 20,197
+focus (cpp),Day 21,-1
+focus (cpp),Day 22,-1
+focus (cpp),Day 23,307
+focus (cpp),Day 24,344
+focus (cpp),Day 25,14
+focus (cpp),Day 26,-1
+focus (cpp),Day 27,181
+focus (cpp),Day 28,151
+focus (cpp),Day 29,314
+focus (cpp),Day 30,84
+focus (cpp),Day 31,20
+focus (cpp),Day 32,295
+focus (cpp),Day 33,328
+focus (cpp),Day 34,91
+focus (cpp),Day 35,302
+focus (cpp),Day 36,56
+focus (cpp),Day 37,-1
+focus (cpp),Day 38,339
+focus (cpp),Day 39,323
+focus (cpp),Day 40,299
+np-focus,Day 2,330
+np-focus,Day 3,315
+np-focus,Day 4,666
+np-focus,Day 5,303
+np-focus,Day 6,73
+np-focus,Day 7,360
+np-focus,Day 8,345
+np-focus,Day 9,356
+np-focus,Day 10,363
+np-focus,Day 11,386
+np-focus,Day 12,326
+np-focus,Day 13,366
+np-focus,Day 15,409
+np-focus,Day 16,358
+np-focus,Day 17,589
+np-focus,Day 18,42
+np-focus,Day 19,310
+np-focus,Day 20,291
+np-focus,Day 21,318
+np-focus,Day 22,302
+np-focus,Day 23,304
+np-focus,Day 24,344
+np-focus,Day 25,338
+np-focus,Day 26,236
+np-focus,Day 27,181
+np-focus,Day 28,98
+np-focus,Day 29,314
+np-focus,Day 30,61
+np-focus,Day 31,34
+np-focus,Day 32,295
+np-focus,Day 33,327
+np-focus,Day 34,215
+np-focus,Day 35,690
+np-focus,Day 36,338
+np-focus,Day 37,358
+np-focus,Day 38,349
+np-focus,Day 39,320
+np-focus,Day 40,299
+np-focus (cpp),Day 2,330
+np-focus (cpp),Day 3,315
+np-focus (cpp),Day 4,666
+np-focus (cpp),Day 5,303
+np-focus (cpp),Day 6,73
+np-focus (cpp),Day 7,360
+np-focus (cpp),Day 8,345
+np-focus (cpp),Day 9,356
+np-focus (cpp),Day 10,363
+np-focus (cpp),Day 11,386
+np-focus (cpp),Day 12,326
+np-focus (cpp),Day 13,366
+np-focus (cpp),Day 15,409
+np-focus (cpp),Day 16,358
+np-focus (cpp),Day 17,589
+np-focus (cpp),Day 18,42
+np-focus (cpp),Day 19,310
+np-focus (cpp),Day 20,291
+np-focus (cpp),Day 21,318
+np-focus (cpp),Day 22,302
+np-focus (cpp),Day 23,304
+np-focus (cpp),Day 24,344
+np-focus (cpp),Day 25,338
+np-focus (cpp),Day 26,236
+np-focus (cpp),Day 27,181
+np-focus (cpp),Day 28,98
+np-focus (cpp),Day 29,314
+np-focus (cpp),Day 30,61
+np-focus (cpp),Day 31,34
+np-focus (cpp),Day 32,295
+np-focus (cpp),Day 33,327
+np-focus (cpp),Day 34,215
+np-focus (cpp),Day 35,690
+np-focus (cpp),Day 36,338
+np-focus (cpp),Day 37,358
+np-focus (cpp),Day 38,349
+np-focus (cpp),Day 39,320
+np-focus (cpp),Day 40,299
+nunc,Day 2,320
+nunc,Day 3,309
+nunc,Day 4,334
+nunc,Day 5,171
+nunc,Day 6,317
+nunc,Day 7,354
+nunc,Day 8,337
+nunc,Day 9,356
+nunc,Day 10,354
+nunc,Day 11,372
+nunc,Day 12,312
+nunc,Day 13,355
+nunc,Day 15,95
+nunc,Day 16,383
+nunc,Day 17,301
+nunc,Day 18,35
+nunc,Day 19,301
+nunc,Day 20,357
+nunc,Day 21,313
+nunc,Day 22,301
+nunc,Day 23,296
+nunc,Day 24,343
+nunc,Day 25,329
+nunc,Day 26,341
+nunc,Day 27,362
+nunc,Day 28,682
+nunc,Day 29,313
+nunc,Day 30,307
+nunc,Day 31,371
+nunc,Day 32,287
+nunc,Day 33,322
+nunc,Day 34,312
+nunc,Day 35,667
+nunc,Day 36,334
+nunc,Day 37,348
+nunc,Day 38,342
+nunc,Day 39,319
+nunc,Day 40,295
+chad,Day 2,328
+chad,Day 3,313
+chad,Day 4,339
+chad,Day 5,238
+chad,Day 6,323
+chad,Day 7,359
+chad,Day 8,341
+chad,Day 9,343
+chad,Day 10,363
+chad,Day 11,363
+chad,Day 12,319
+chad,Day 13,363
+chad,Day 15,97
+chad,Day 16,334
+chad,Day 17,311
+chad,Day 18,39
+chad,Day 19,307
+chad,Day 20,222
+chad,Day 21,326
+chad,Day 22,283
+chad,Day 23,301
+chad,Day 24,330
+chad,Day 25,335
+chad,Day 26,346
+chad,Day 27,280
+chad,Day 28,321
+chad,Day 29,294
+chad,Day 30,120
+chad,Day 31,100
+chad,Day 32,292
+chad,Day 33,326
+chad,Day 34,318
+chad,Day 35,665
+chad,Day 36,338
+chad,Day 37,356
+chad,Day 38,354
+chad,Day 39,304
+chad,Day 40,299

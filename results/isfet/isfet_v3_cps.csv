@@ -1,0 +1,47 @@
+method,cp_index,cp_day
+vocd,12,12.5
+vocd,27,27.5
+vocd,57,57.5
+vocd,74,74.5
+vocd (cpp),12,12.5
+vocd (cpp),27,27.5
+vocd (cpp),57,57.5
+vocd (cpp),74,74.5
+bocd,21,21.5
+bocd,42,42.5
+bocd,63,63.5
+bocd,84,84.5
+dm-bocd,21,21.5
+dm-bocd,42,42.5
+dm-bocd,63,63.5
+dm-bocd,84,84.5
+focus,5,5.5
+focus,24,24.5
+focus,33,33.5
+focus,48,48.5
+focus,56,56.5
+focus,64,64.5
+focus,73,73.5
+focus (cpp),5,5.5
+focus (cpp),24,24.5
+focus (cpp),33,33.5
+focus (cpp),48,48.5
+focus (cpp),56,56.5
+focus (cpp),64,64.5
+focus (cpp),73,73.5
+nunc,11,11.5
+nunc,24,24.5
+nunc,34,34.5
+nunc,49,49.5
+nunc,59,59.5
+nunc,66,66.5
+nunc,73,73.5
+chad,9,9.5
+chad,22,22.5
+chad,30,30.5
+chad,38,38.5
+chad,48,48.5
+chad,56,56.5
+chad,64,64.5
+chad,72,72.5
+champ,36,36.5

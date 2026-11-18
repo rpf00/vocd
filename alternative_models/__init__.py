@@ -19,15 +19,26 @@ Two consequences of that rule shape the code here:
     wrapper therefore defaults to a causal, commit-on-arrival extraction and
     offers ``extract="upstream"`` to reproduce the published operating point.
 
-2.  FOCuS / R-FOCuS / NP-FOCuS / CHAD are alarm-style: natively they emit a
+2.  FOCuS / NP-FOCuS / NUNC / CHAD are alarm-style: natively they emit a
     stopping time, not a segmentation.  They are reference reimplementations
     (following the cited papers, NOT the authors' code) exposed through a
     common ``OnlineAlarm`` interface and driven by ``_restart.run_restart``,
     which restarts the detector after each alarm to yield a full change-point
-    set online.  All four share ONE error budget ``alpha`` (family-wise, split
+    set online.  All share ONE error budget ``alpha`` (family-wise, split
     across the tests each method performs), set before seeing the data — the
     analogue of VOCD's FWER budget — so no method is individually calibrated on
     the test series.
+
+3.  "focus-cpp" / "np-focus-cpp" are C++ implementations of FOCuS and
+    NP-FOCuS at their published complexity (functional pruning).  They are
+    timing twins: bit-identical detections to the Python rows, asserted by
+    the driver, which runs them at the Python row's best budget.
+
+4.  CHAMP is a genuine online MAP *segmentation* method (the closest
+    published relative of VOCD) and does NOT use the restart driver; it
+    returns its own causally-committed change-point set, read off with the
+    same commit rule the BOCD wrapper uses.  Its sweep knob is the length-
+    prior timescale, on the same hazard grid as BOCD.
 
 Every detector exposes the same callable contract used by the example harness::
 
@@ -45,18 +56,26 @@ from ._restart import run_restart
 from .bocd import detect as bocd_detect
 from .dm_bocd import detect as dm_bocd_detect
 from .focus import detect as focus_detect
-from .rfocus import detect as rfocus_detect
 from .npfocus import detect as npfocus_detect
 from .chad import detect as chad_detect
+from .nunc import detect as nunc_detect
+from .champ import detect as champ_detect
+from ._cppalarms import focus_detect as focus_cpp_detect
+from ._cppalarms import npfocus_detect as npfocus_cpp_detect
 
 # name -> (callable, needs_dsm).  VOCD is added by the harness, not here.
 REGISTRY = {
     "bocd":     (bocd_detect,    True),
     "dm-bocd":  (dm_bocd_detect, True),
     "focus":    (focus_detect,   False),
-    "r-focus":  (rfocus_detect,  False),
     "np-focus": (npfocus_detect, False),
     "chad":     (chad_detect,    False),
+    "nunc":     (nunc_detect,    False),
+    "champ":    (champ_detect,   False),
+    # compiled timing twins (functional pruning); paired by the driver with
+    # their Python row at the same budget, never swept on their own
+    "focus-cpp":    (focus_cpp_detect,   False),
+    "np-focus-cpp": (npfocus_cpp_detect, False),
 }
 
 __all__ = ["REGISTRY", "OnlineAlarm", "run_restart"]

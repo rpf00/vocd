@@ -28,3 +28,7 @@ DSM-bocd/
 .vscode/
 .idea/
 *.zip
+data/*
+!data/README.md
+!data/fetch_data.py
+!results/env/

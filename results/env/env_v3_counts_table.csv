@@ -1,0 +1,9 @@
+method,cps_positives,cps_controls,cps_controls_storm_adjacent,cps_controls_away_from_storms,controls_with_storm_adjacent_cp,n_controls
+vocd,3,13,2,11,2,12
+bocd,3,56,13,43,9,12
+dm-bocd,1,90,17,73,9,12
+focus,10,122,27,95,11,12
+np-focus,0,7,1,6,1,12
+nunc,21,125,35,90,12,12
+chad,19,117,24,93,12,12
+champ,9,56,17,39,10,12

@@ -1,0 +1,159 @@
+ion,method,cp_index,cp_day
+h,vocd,12,12.5
+h,vocd,27,27.5
+h,vocd,57,57.5
+h,vocd,74,74.5
+h,vocd (cpp),12,12.5
+h,vocd (cpp),27,27.5
+h,vocd (cpp),57,57.5
+h,vocd (cpp),74,74.5
+h,bocd,21,21.5
+h,bocd,42,42.5
+h,bocd,63,63.5
+h,bocd,84,84.5
+h,dm-bocd,21,21.5
+h,dm-bocd,42,42.5
+h,dm-bocd,63,63.5
+h,dm-bocd,84,84.5
+h,focus,5,5.5
+h,focus,24,24.5
+h,focus,33,33.5
+h,focus,48,48.5
+h,focus,56,56.5
+h,focus,64,64.5
+h,focus,73,73.5
+h,focus (cpp),5,5.5
+h,focus (cpp),24,24.5
+h,focus (cpp),33,33.5
+h,focus (cpp),48,48.5
+h,focus (cpp),56,56.5
+h,focus (cpp),64,64.5
+h,focus (cpp),73,73.5
+h,nunc,11,11.5
+h,nunc,24,24.5
+h,nunc,34,34.5
+h,nunc,49,49.5
+h,nunc,59,59.5
+h,nunc,66,66.5
+h,nunc,73,73.5
+h,chad,9,9.5
+h,chad,22,22.5
+h,chad,30,30.5
+h,chad,38,38.5
+h,chad,48,48.5
+h,chad,56,56.5
+h,chad,64,64.5
+h,chad,72,72.5
+h,champ,36,36.5
+na,vocd,38,38.5
+na,vocd,64,64.5
+na,vocd (cpp),38,38.5
+na,vocd (cpp),64,64.5
+na,bocd,21,21.5
+na,bocd,42,42.5
+na,bocd,63,63.5
+na,bocd,84,84.5
+na,dm-bocd,21,21.5
+na,dm-bocd,42,42.5
+na,dm-bocd,63,63.5
+na,dm-bocd,84,84.5
+na,focus,7,7.5
+na,focus,14,14.5
+na,focus,22,22.5
+na,focus,30,30.5
+na,focus,37,37.5
+na,focus,44,44.5
+na,focus,53,53.5
+na,focus,62,62.5
+na,focus,69,69.5
+na,focus,83,83.5
+na,focus (cpp),7,7.5
+na,focus (cpp),14,14.5
+na,focus (cpp),22,22.5
+na,focus (cpp),30,30.5
+na,focus (cpp),37,37.5
+na,focus (cpp),44,44.5
+na,focus (cpp),53,53.5
+na,focus (cpp),62,62.5
+na,focus (cpp),69,69.5
+na,focus (cpp),83,83.5
+na,np-focus,11,11.5
+na,np-focus (cpp),11,11.5
+na,nunc,7,7.5
+na,nunc,14,14.5
+na,nunc,21,21.5
+na,nunc,28,28.5
+na,nunc,36,36.5
+na,nunc,43,43.5
+na,nunc,52,52.5
+na,nunc,61,61.5
+na,nunc,67,67.5
+na,nunc,79,79.5
+na,chad,8,8.5
+na,chad,16,16.5
+na,chad,24,24.5
+na,chad,32,32.5
+na,chad,40,40.5
+na,chad,48,48.5
+na,chad,57,57.5
+na,chad,65,65.5
+na,chad,74,74.5
+na,champ,31,31.5
+na,champ,54,54.5
+na,champ,75,75.5
+k,vocd,26,26.5
+k,vocd,45,45.5
+k,vocd,63,63.5
+k,vocd,84,84.5
+k,vocd (cpp),26,26.5
+k,vocd (cpp),45,45.5
+k,vocd (cpp),63,63.5
+k,vocd (cpp),84,84.5
+k,bocd,21,21.5
+k,bocd,42,42.5
+k,bocd,63,63.5
+k,bocd,84,84.5
+k,dm-bocd,21,21.5
+k,dm-bocd,42,42.5
+k,dm-bocd,63,63.5
+k,dm-bocd,84,84.5
+k,focus,10,10.5
+k,focus,18,18.5
+k,focus,26,26.5
+k,focus,38,38.5
+k,focus,48,48.5
+k,focus,53,53.5
+k,focus,62,62.5
+k,focus,69,69.5
+k,focus,79,79.5
+k,focus (cpp),10,10.5
+k,focus (cpp),18,18.5
+k,focus (cpp),26,26.5
+k,focus (cpp),38,38.5
+k,focus (cpp),48,48.5
+k,focus (cpp),53,53.5
+k,focus (cpp),62,62.5
+k,focus (cpp),69,69.5
+k,focus (cpp),79,79.5
+k,np-focus,11,11.5
+k,np-focus (cpp),11,11.5
+k,nunc,11,11.5
+k,nunc,18,18.5
+k,nunc,25,25.5
+k,nunc,37,37.5
+k,nunc,44,44.5
+k,nunc,53,53.5
+k,nunc,60,60.5
+k,nunc,67,67.5
+k,nunc,74,74.5
+k,nunc,81,81.5
+k,chad,10,10.5
+k,chad,18,18.5
+k,chad,26,26.5
+k,chad,34,34.5
+k,chad,42,42.5
+k,chad,50,50.5
+k,chad,58,58.5
+k,chad,66,66.5
+k,chad,74,74.5
+k,champ,54,54.5
