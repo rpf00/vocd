@@ -1,6 +1,6 @@
 """
 MOX gas-sensor drift-correction benchmark: VOCD vs BOCD, Dm-BOCD, NP-FOCuS,
-R-FOCuS, CHAD (Worner et al. 2025).
+CHAD (Worner et al. 2025).
 
 The structural twin of ``examples/isfet_data.py``, using the SAME vocd package
 and the SAME alternative_models panel — so gas is apples-to-apples with the
@@ -29,7 +29,7 @@ finally exercise VOCD's model-agnosticism (the drift here is NOT a clean ramp).
 Panel & fairness (identical to ISFET)
 -------------------------------------
 vocd (+ paired ``vocd (cpp)`` = same detections, cpp runtime), bocd, dm-bocd,
-np-focus, r-focus, chad, plus the ``oracle`` row (true cycle_stage baseline — the
+np-focus, chad, plus the ``oracle`` row (true cycle_stage baseline — the
 ceiling).  ``--sweep`` gives each detector its own best budget (vocd->fwer,
 alarm->alpha, bocd->hazard swept, dm-bocd inherits bocd's best), minimising mean
 MAE, with central-plateau selection.  Runtime reports vocd in the PYTHON backend
@@ -71,7 +71,7 @@ from gas_sensor_data import (ANALYTE_LABELS,
 _REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _DEFAULT_GAS_DIR = os.path.join(_REPO, "data", "gas_sensor_worner2025")
 
-DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "r-focus", "chad"]
+DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "chad"]
 VOCD_FAIR_BACKEND = "python"
 VOCD_FAST_BACKEND = "cpp"
 MIN_BASE = 10   # min baseline samples for a usable correction

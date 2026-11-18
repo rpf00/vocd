@@ -17,7 +17,7 @@ and writes, to --out-dir (default ``results/env``):
 * ``env_v3_direction.csv``  DIRECTION AND PERSISTENCE.  For every CP on a
   positive (TP, TN) that matches a storm, the median of the observations in
   the --persist days after the CP vs the --persist days before it; the match is
-  physics-consistent only if the shift is positive (sustained increase).
+  consistent with the expected physics only if the shift is positive (sustained increase).
 * ``env_v3_counts_table.csv``  SUPPLEMENTARY TABLE 1.  Per method: CPs on the
   positives, CPs on the controls, storm-adjacent CPs on the controls, CPs on
   the controls away from storms, and controls with a storm-adjacent CP.

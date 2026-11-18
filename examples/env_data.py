@@ -1,7 +1,7 @@
 """
 Environmental-monitoring changepoint experiment — POSITIVE vs NEGATIVE-CONTROL.
 
-Final env experiment for the VOCD paper. Same six-method panel + paired
+Final env experiment for the VOCD paper. Same detector panel + paired
 ``vocd (cpp)`` as the other examples (pip ``vocd`` MW/KS gate +
 ``alternative_models``), applied to pooled daily-median water-quality series
 from the 2020-21 stream/reservoir record.
@@ -22,8 +22,7 @@ The scientific design (literature-backed; see refs at bottom):
   storm-driven and would confound event scoring.
 
 Ground-truth events — only the FOUR tropical rain systems that actually hit
-Northern Virginia (verified): Isaias 2020-08-04, Zeta 2020-10-29 (anchor case,
-slide-quantified), Elsa 2021-07-09, Ida 2021-09-01.  Bertha and Fred did not
+Northern Virginia (verified): Isaias 2020-08-04, Zeta 2020-10-29, Elsa 2021-07-09, Ida 2021-09-01.  Bertha and Fred did not
 meaningfully hit NoVA; the Feb-2021 ice/winter storms are a different mechanism
 (road salt, not rain-flush) and are excluded from rain-event scoring.  Note:
 CL/COND25 could carry a genuine winter road-salt signal — irrelevant here since
@@ -31,7 +30,7 @@ only rain events are scored.
 
 The right question is therefore NOT "one change-point per event" but:
 does a method FIRE on the positive group near rain events while STAYING SILENT
-on the negative controls?  A physics-consistent detector maximises
+on the negative controls?  A selective detector maximises
     consistency = POS_recall  -  NEG_fired_fraction
 (caught expected nutrient shifts; silent where dilution predicts none).
 A robust detector (VOCD) is expected to be conservative — high specificity on
@@ -73,7 +72,7 @@ _DEFAULT_ENV_DIR = os.path.join(_REPO, "data", "env_monitoring")
 _DEFAULT_FILE = "2020-21_stream_and_reservoir.xlsx"
 _DEFAULT_SHEET = "strebl_2020-2021"
 
-DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "r-focus", "chad"]
+DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "chad"]
 VOCD_FAIR_BACKEND = "python"
 VOCD_FAST_BACKEND = "cpp"
 
@@ -160,7 +159,7 @@ def main():
     ap.add_argument("--data-dir", default=_DEFAULT_ENV_DIR)
     ap.add_argument("--file", default=_DEFAULT_FILE)
     ap.add_argument("--sheet", default=_DEFAULT_SHEET)
-    ap.add_argument("--methods", default="vocd,bocd,np-focus,r-focus,chad")
+    ap.add_argument("--methods", default="vocd,bocd,np-focus,chad")
     ap.add_argument("--dsm-path", default=None)
     ap.add_argument("--tol", type=int, default=10, help="event-match tolerance (days)")
     ap.add_argument("--alpha", type=float, default=0.05,
@@ -287,7 +286,7 @@ def main():
           "spurious storm attribution (the true false-alarm; 0 ideal)")
     print("consistency = POS recall - (NEG false-alarm fraction); +1 = caught "
           "every storm, no spurious storm attribution on controls")
-    print("\nInterpretation: a physics-consistent detector fires on the nutrient")
+    print("\nInterpretation: a selective detector fires on the nutrient")
     print("positives near storms and stays silent on the dilution/flush "
           "negatives.")
     print("VOCD's robustness favours specificity (few NEG false alarms); TP/TN")

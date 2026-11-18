@@ -63,7 +63,7 @@ METHOD_STYLE = {   # csv name : (label, colour)
     "chad":     ("CHAD",     C_CHAD),
     "champ":    ("CHAMP",    C_CHAMP),
 }
-C_OK = "#009E73"          # physics-consistent shading (Fig. 5b)
+C_OK = "#009E73"          # shading where recall exceeds false alarms (Fig. 5b)
 JITTER = 0.012            # spread of coincident points in panel a (axis units)
 
 
@@ -152,7 +152,7 @@ def draw_declared(ax, x, y, col):
 def panel_a(ax, sweep, declared):
     ax.fill_between([0, 1.05], [0, 1.05], [1.05, 1.05], color=C_OK, alpha=0.08, lw=0, zorder=0)
     ax.plot([0, 1.05], [0, 1.05], ls="--", color="0.45", lw=0.7, zorder=1)
-    ax.text(0.03, 1.0, "physics-consistent\n(recall > false alarms)", color=C_OK,
+    ax.text(0.03, 1.0, "recall > false alarms", color=C_OK,
             fontsize=F["small"], style="italic", ha="left", va="top")
     pts = {(m, i): (r["neg_false_frac"], r["pos_recall"])
            for m, rs in sweep.items() for i, r in enumerate(rs)}
@@ -182,7 +182,7 @@ def panel_b(ax, sweep, declared):
     pad = 0.08 * (hi - lo)
     ax.axhspan(0, hi + pad, color=C_OK, alpha=0.08, lw=0, zorder=0)
     ax.axhline(0, color="0.45", ls="--", lw=0.7, zorder=1)
-    ax.text(0.02, 0.98, "physics-consistent", transform=ax.transAxes, color=C_OK,
+    ax.text(0.02, 0.98, "consistency > 0", transform=ax.transAxes, color=C_OK,
             fontsize=F["small"], style="italic", ha="left", va="top")
     xs = []
     for m, rs in sweep.items():

@@ -49,6 +49,6 @@ data/
 Please cite the original sources when you use these data.
 
 - **ISFET record.** Margarit-Taulé, J. M., Martín-Ezquerra, M., Escudé-Pujol, R., Jiménez-Jorquera, C. & Liu, S.-C. Cross-compensation of FET sensor drift and matrix effects in the industrial continuous monitoring of ion concentrations. *Sens. Actuators B Chem.* **353**, 131123 (2022).
-- **MOX gas sensor record.** Wörner, J., Eimler, J. & Pein-Hackelbusch, M. Long-term drift behavior in metal oxide gas sensor arrays: a one-year dataset from an electronic nose. *Sci. Data* **12**, 1628 (2025).
+- **MOX gas sensor record.** Wörner, J., Eimler, J. & Pein-Hackelbusch, M. Long-term drift behavior in metal oxide gas sensor arrays: a one-year dataset from an electronic nose. *Sci. Data* **12**, 1628 (2025). Original record: https://doi.org/10.5281/zenodo.15681119.
 - **Environmental record.** Occoquan Watershed Monitoring Laboratory (OWML), Virginia Tech. Stream and reservoir water-quality record, January 2020 to December 2021.
 - **Flash crash, bond yield and well-log series.** As distributed with the DSM-bocd repository of Altamirano, M., Briol, F.-X. & Knoblauch, J. Robust and scalable Bayesian online changepoint detection. In *Proc. 40th International Conference on Machine Learning* (PMLR, 2023). https://github.com/maltamiranomontero/DSM-bocd

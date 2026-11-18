@@ -2,9 +2,8 @@
 
 Reference reimplementation in the spirit of
 
-    Moen (2026), "CHAD: online change-point detection by wrapping offline
-    tests on a dyadic grid" (working title; align citation with the version
-    you cite in the paper).
+    Moen, P. A. J., "A grid-based methodology for fast online changepoint
+    detection", arXiv:2504.09573.
 
 At each time ``t`` the detector maintains a dyadic grid of window half-widths
 ``h in {h0, 2 h0, 4 h0, ...}`` and, for each admissible ``h`` (needs

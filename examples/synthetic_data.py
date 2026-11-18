@@ -1,5 +1,5 @@
 """
-Synthetic-data benchmark: VOCD vs BOCD, Dm-BOCD, NP-FOCuS, R-FOCuS, CHAD.
+Synthetic-data benchmark: VOCD vs BOCD, Dm-BOCD, NP-FOCuS, CHAD.
 
 Solves the contaminated change-in-mean case of Altamirano, Briol & Knoblauch
 (2023) — T=500, six true change-points at [100, 200, 300, 350, 400, 450],
@@ -10,7 +10,7 @@ a change (see ``alternative_models/`` for how each method is held to that bar).
 The data generator, contamination procedure and the ``accuracy_delay`` scorer
 are reproduced verbatim from that repository's ``notebooks/accuracy_delay.ipynb``
 so the baselines are scored on their own terms.  VOCD is the installed package;
-the other five come from the local ``alternative_models/`` package.  BOCD /
+the others come from the local ``alternative_models/`` package.  BOCD /
 Dm-BOCD need a clone of maltamiranomontero/DSM-bocd (``--dsm-path`` or
 ``VOCD_DSM_PATH``); if it is absent they are skipped and everything else runs.
 
@@ -41,7 +41,7 @@ Budget sweep — report each method's BEST-achievable operating point::
         --out results/synthetic/synthetic_v2_best.csv \
         --sweep-out results/synthetic/synthetic_v2_sweep.csv
 
-The knob swept is: vocd -> fwer, {np-focus,r-focus,chad} -> alpha (all on the
+The knob swept is: vocd -> fwer, {np-focus,chad} -> alpha (all on the
 alpha grid); bocd -> hazard_timescale (hazard grid).  Dm-BOCD is ~20 s/trial
 and is NOT swept: it runs once at BOCD's best hazard (both use the same
 ConstantHazard prior, so BOCD's optimum is a principled proxy), overridable with
@@ -259,7 +259,7 @@ def main() -> None:
                     help="clone of maltamiranomontero/DSM-bocd (for BOCD / Dm-BOCD)")
     ap.add_argument("--trials", type=int, default=N_TRIALS)
     ap.add_argument("--methods",
-                    default="vocd,bocd,dm-bocd,np-focus,r-focus,chad")
+                    default="vocd,bocd,dm-bocd,np-focus,chad")
     ap.add_argument("--alpha", type=float, default=0.01,
                     help="single-point mode: shared family-wise budget")
     ap.add_argument("--min-seg", type=int, default=10)

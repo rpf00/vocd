@@ -8,7 +8,7 @@ Two things live here:
      Dm-BOCD is run with the author's PER-PROBLEM configuration (his model,
      priors, b, hazard, and estimated omega) — faithful to his notebooks.
   2. our_panel_1d(...): runs OUR consistent panel on a 1-D series —
-     vocd, bocd, np-focus, r-focus, chad — at the synthetic defaults
+     vocd, bocd, np-focus, chad — at the synthetic defaults
      (fwer/alpha = 0.01, min_seg = 10).  'bocd' here is our standard conjugate
      wrapper (kept identical to every other experiment in the paper); Dm-BOCD is
      the author's faithful config, handled per-problem in each script.
@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import vocd
 from alternative_models import REGISTRY
 
-OUR_METHODS = ["vocd", "bocd", "np-focus", "r-focus", "chad"]
+OUR_METHODS = ["vocd", "bocd", "np-focus", "chad"]
 DEFAULT_ALPHA = 0.01     # synthetic default (vocd fwer / alarm alpha)
 DEFAULT_MIN_SEG = 10     # synthetic default
 BOCD_HAZARD = 300        # our standard-BOCD wrapper default (synthetic)
@@ -117,7 +117,7 @@ def our_panel_1d(y, dsm_path=None, alpha=DEFAULT_ALPHA, min_seg=DEFAULT_MIN_SEG,
             fn, _ = REGISTRY["bocd"]
             cps = fn(y, mean0=None, dsm_path=dsm_path, extract="causal",
                      hazard_timescale=bocd_hazard)
-        else:  # np-focus / r-focus / chad
+        else:  # np-focus / chad
             fn, _ = REGISTRY[name]
             cps = fn(y, alpha=alpha, min_seg=min_seg)
         out[name] = sorted(int(c) for c in cps if 0 < c < len(y))

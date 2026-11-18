@@ -1,7 +1,7 @@
 """
-ISFET drift-correction benchmark: VOCD vs BOCD, Dm-BOCD, NP-FOCuS, R-FOCuS, CHAD.
+ISFET drift-correction benchmark: VOCD vs BOCD, Dm-BOCD, NP-FOCuS, CHAD.
 
-Structurally the twin of ``examples/synthetic_data.py`` — same six-method panel,
+Structurally the twin of ``examples/synthetic_data.py`` — same detector panel,
 same paired ``vocd`` / ``vocd (cpp)`` rows, same ``--sweep`` with central-plateau
 selection, same BOCD-swept / Dm-BOCD-inherits-hazard logic, same fair-runtime
 framing.  What differs is the PROBLEM, and therefore the objective:
@@ -82,7 +82,7 @@ S_NERNST = 59.16
 BURN_IN = 10        # days before scoring starts
 MIN_FIT = 4         # days; fewer and a line is meaningless
 
-DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "r-focus", "chad"]
+DETECTORS = ["vocd", "bocd", "dm-bocd", "np-focus", "chad"]
 VOCD_FAIR_BACKEND = "python"
 VOCD_FAST_BACKEND = "cpp"
 METRIC_KEYS = ["rmse_mv", "rmse_ph", "mae_mv", "beta", "n_cp", "runtime_ms"]
