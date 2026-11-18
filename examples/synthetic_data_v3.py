@@ -50,7 +50,7 @@ Fairness notes to carry into the paper
   matched to it); W=50 = the 2 x 25 points VOCD's gate inspects.
 * All alarm baselines and CHAMP are reference reimplementations, unoptimised
   pure Python; BOCD / Dm-BOCD run the authors' code.  Runtime columns are
-  comparable within that caveat (state it in the caption).  CHAMP's exact
+  comparable within that caveat.  CHAMP's exact
   recursion is O(n^3) per series (~5 s/trial at n=500).
 
 Usage::

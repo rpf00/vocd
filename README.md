@@ -124,7 +124,7 @@ git clone https://github.com/maltamiranomontero/DSM-bocd.git ../DSM-bocd
 export VOCD_DSM_PATH=../DSM-bocd   # or pass --dsm-path to each script
 ```
 
-Without it, the two BOCD rows are skipped and everything else runs.
+Without it, the two BOCD rows are skipped and everything else runs. DSM-bocd has its own requirements (see its repository); in particular, its Dm-BOCD estimators need `jax`.
 
 ### 3. Run the experiments, then the figures
 

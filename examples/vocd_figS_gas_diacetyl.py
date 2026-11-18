@@ -221,7 +221,7 @@ def panel_a(fig, ax, resid, method="vocd", smooth_s=30.0, sample_hz=1.0):
 # ── panel b : MAE vs runtime (Fig. 4d) ───────────────────────────────────────
 def dodge_x(points):
     """Spread near-coincident markers horizontally (log axis) so none hides
-    another; returns {method: x_plot}.  Say so in the caption."""
+    another; returns {method: x_plot}."""
     pts = sorted(points.items(), key=lambda kv: kv[1][0])
     out, i = {}, 0
     while i < len(pts):

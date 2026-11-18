@@ -14,7 +14,7 @@ Panels (bold lower-case letters; Arial; built AT FINAL PRINT SIZE):
      bootstrap CIs over days, the oracle as a horizontal line, and Dm-BOCD
      real if it was run, otherwise an ESTIMATE (hollow marker, no CI): runtime
      = runtime(VOCD on gas) x (Dm-BOCD / VOCD) from the ISFET table, MAE at
-     BOCD's gas value (--dm-bocd-mae).  Say so in the caption.
+     BOCD's gas value (--dm-bocd-mae).
 
 Inputs (all from examples/gas_data_v3.py; NOTHING is recomputed here):
   --best        gas_v3_best.csv      one row per method (panel d)
@@ -388,7 +388,7 @@ DODGE_LOG10 = 0.07     # markers closer than this in log10(runtime) and 0.5 kOhm
 
 def dodge_x(points, ylim_span):
     """Spread near-coincident markers horizontally (log axis) so none hides
-    another; returns {method: x_plot}.  Say so in the caption."""
+    another; returns {method: x_plot}."""
     pts = sorted(points.items(), key=lambda kv: kv[1][0])
     out, i = {}, 0
     while i < len(pts):

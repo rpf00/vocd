@@ -8,7 +8,7 @@ as ``vocd_figS_isfet_na_k.py`` / ``vocd_figS_gas_diacetyl.py``:
      operating point of Fig. 5 drawn large with a black edge.  The shaded
      region above the diagonal is where recall exceeds false alarms (as in
      Fig. 5b).  Points that coincide across detectors are spread slightly so
-     none hides another (say so in the caption).
+     none hides another.
   b  consistency (recall - false-alarm fraction) vs the total number of CPs
      over the 14 series (log), same lines and declared points: how much of a
      detector's consistency is bought by firing more.

@@ -2,9 +2,9 @@
 SI tables (LaTeX booktabs style, rendered to PNG + PDF) — environmental
 monitoring:
 
-  Supplementary Table 1  CPs placed by each detector at the operating points of
+  Supplementary Table 3  CPs placed by each detector at the operating points of
                          Fig. 5 (from env_v3_counts_table.csv)
-  Supplementary Table 2  direction and persistence of every CP on TP / TN that
+  Supplementary Table 4  direction and persistence of every CP on TP / TN that
                          matches a storm (from env_v3_direction.csv)
 
 Both CSVs are written by examples/env_sensitivity_v3.py; nothing is recomputed.
@@ -189,8 +189,8 @@ def main():
     import matplotlib; matplotlib.use("Agg")
     set_font(args.font)
     os.makedirs(args.out_dir, exist_ok=True)
-    table1(args.counts, os.path.join(args.out_dir, "tableS1_env_counts"), args.font, args.font_pt)
-    table2(args.direction, os.path.join(args.out_dir, "tableS2_env_direction"), args.font,
+    table1(args.counts, os.path.join(args.out_dir, "tableS3_env_counts"), args.font, args.font_pt)
+    table2(args.direction, os.path.join(args.out_dir, "tableS4_env_direction"), args.font,
            args.font_pt)
 
 

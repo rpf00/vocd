@@ -12,7 +12,7 @@ sweep MINIMISES RMSE.  What this file changes is the PANEL and the plumbing,
 so every experiment in the paper calls the detectors the same way as
 ``examples/synthetic_data_v3.py``:
 
-* R-FOCuS is dropped (a Huber-clipped FOCuS we built ourselves, unpublished).
+* R-FOCuS is dropped (a Huber-clipped FOCuS we built ourselves, not a published method).
 * FOCuS (plain), NUNC and CHAMP are added, called through the same
   ``alternative_models.REGISTRY`` entries and with the same budget kinds:
   alarm methods on the alpha grid, BOCD / Dm-BOCD / CHAMP on the hazard
@@ -29,7 +29,7 @@ so every experiment in the paper calls the detectors the same way as
   true E0, and every method's E0_hat and corrected V_H at its best operating
   point, plus every method's final boundary set (``--cps-out``).
 
-A-priori method settings for THIS record (declare them in the Methods, like
+A-priori method settings for THIS record (fixed in advance, like
 ``min_seg``): NUNC window W = 50 = 2 x VOCD's gate window (the same rule as
 the synthetic benchmark; its window grows until it reaches W); CHAMP outlier
 ratio gamma = 0.05, confirmation = min_seg, commit spacing lag = 20 (the same

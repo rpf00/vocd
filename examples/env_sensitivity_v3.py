@@ -1,5 +1,5 @@
 """
-Environmental-monitoring sensitivity analyses, v3 — Supplementary Table 1 and
+Environmental-monitoring sensitivity analyses, v3 — Supplementary Table 3 and
 the Methods / Results numbers of the shifted-date null and the direction check.
 
 Reads ONLY the outputs of ``env_data_v3.py`` (no detector is re-run):
@@ -18,7 +18,7 @@ and writes, to --out-dir (default ``results/env``):
   positive (TP, TN) that matches a storm, the median of the observations in
   the --persist days after the CP vs the --persist days before it; the match is
   consistent with the expected physics only if the shift is positive (sustained increase).
-* ``env_v3_counts_table.csv``  SUPPLEMENTARY TABLE 1.  Per method: CPs on the
+* ``env_v3_counts_table.csv``  SUPPLEMENTARY TABLE 3.  Per method: CPs on the
   positives, CPs on the controls, storm-adjacent CPs on the controls, CPs on
   the controls away from storms, and controls with a storm-adjacent CP.
 
@@ -180,7 +180,7 @@ def main():
         write(os.path.join(args.out_dir, "env_v3_direction.csv"), dirn)
 
     tab = counts_table(cps_by, evs, args.tol, methods)
-    print("\nSUPPLEMENTARY TABLE 1 (CP counts per method)")
+    print("\nSUPPLEMENTARY TABLE 3 (CP counts per method)")
     for r in tab:
         print(f"  {r['method']:9s} pos {r['cps_positives']:3d}  controls {r['cps_controls']:3d} "
               f"(storm-adjacent {r['cps_controls_storm_adjacent']:3d}, away "

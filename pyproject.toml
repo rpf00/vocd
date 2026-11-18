@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vocd"
-version = "0.1.0"
+version = "1.0.0"
 description = "Viterbi Online Change-point Detection: robust, deterministic change-point detection with multiple-testing control"
 readme = "README.md"
 requires-python = ">=3.9"
