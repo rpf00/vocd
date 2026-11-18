@@ -22,7 +22,7 @@ synthetic_data module is importable it is used for the demo trace; otherwise a
 self-contained fallback is generated, so the script runs standalone with only
 numpy + matplotlib.  Saved to results/pipeline_overview/ at 300 dpi.
 
-    python examples/vocd_fig1_natcomms.py
+    python examples/vocd_fig1.py
 """
 from __future__ import annotations
 import argparse, csv, os, sys
@@ -409,7 +409,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--seed", type=int, default=7)
-    ap.add_argument("--out", default=os.path.join(OUTDIR, "fig1_natcomms.png"))
+    ap.add_argument("--out", default=os.path.join(OUTDIR, "fig1.png"))
     args = ap.parse_args()
     set_nature_style()
     import matplotlib; matplotlib.use("Agg")

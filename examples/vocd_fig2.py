@@ -38,9 +38,9 @@ To move panel e 5 mm right: LAYOUT["panels"]["e"]["x"] += 5.  To make panel f
 taller: ["f"]["h"] = 60 (and push nothing: y is top-anchored).  To change the
 aspect of the whole figure: LAYOUT["fig_mm"] = (180, 220) and re-place.
 
-    python examples/vocd_fig2_natcomms.py
-    python examples/vocd_fig2_natcomms.py --fast          # a-e via the C++ engine
-    python examples/vocd_fig2_natcomms.py --base-font 12  # larger text
+    python examples/vocd_fig2.py
+    python examples/vocd_fig2.py --fast          # a-e via the C++ engine
+    python examples/vocd_fig2.py --base-font 12  # larger text
 
 Panels a-e are VOCD only and are recomputed here (identical to the Python
 engine with --fast, which just runs ~50x faster).  Panel f never recomputes
@@ -254,7 +254,7 @@ def main():
     ap.add_argument("--trials", type=int, default=10)
     ap.add_argument("--stress-frac", type=float, default=0.10)
     ap.add_argument("--sens-threshold", type=float, default=0.05)
-    ap.add_argument("--out", default=os.path.join(OUTDIR, "fig2_natcomms.pdf"),
+    ap.add_argument("--out", default=os.path.join(OUTDIR, "fig2.pdf"),
                     help="vector output; a .png preview is written alongside")
     ap.add_argument("--base-font", type=float, default=7.0,
                     help="base font size in pt AT FINAL PRINT SIZE (180 mm wide); "

@@ -151,7 +151,7 @@ python examples/vocd_figS_scaling.py
 
 | Figure / table | Experiment script(s) | Figure / table script |
 |---|---|---|
-| Fig. 1 (overview) | — | `examples/vocd_fig1_natcomms.py` |
+| Fig. 1 (overview) | — | `examples/vocd_fig1.py` |
 | Fig. 2 (synthetic) | `examples/synthetic_data_v3.py` | `examples/vocd_fig2.py`, `examples/vocd_robustness_fig2.py` |
 | Fig. 3 (ISFET, H⁺) | `examples/isfet_data_v3.py` | `examples/vocd_fig3_isfet.py` |
 | Fig. 4 (MOX gas, ethanol) | `examples/gas_data_v3.py` | `examples/vocd_fig4_gas.py` |

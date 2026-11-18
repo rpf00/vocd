@@ -21,7 +21,7 @@ recomputed here):
                 methods it contains (e.g. a BOCD / Dm-BOCD / CHAMP re-run on a
                 corrected hazard grid); its series/cps are not needed.
 
-LAYOUT (same scheme as vocd_fig2_natcomms.py): sizes and positions live in
+LAYOUT (same scheme as vocd_fig2.py): sizes and positions live in
 the LAYOUT dict below, in millimetres from the top-left corner, at final
 print size (Nature Portfolio: 180 mm wide, 170 mm tall maximum, text 7 pt
 maximum and 5 pt minimum, panel letters 8 pt bold).  Every text size derives
